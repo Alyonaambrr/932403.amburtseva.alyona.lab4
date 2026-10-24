@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Личная страница Амбурцевой Алёны — предпринимателя и стартапера">
+    <meta name="author" content="Амбурцева Алёна">
+    <title>Амбурцева Алёна — предприниматель и стартапер</title>
+
+    <link rel="stylesheet" href="lab_4.css">
+
+    <style>
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            border-bottom: 1px dashed var(--accent-color);
+            padding: 2px 4px;
+            border-radius: 4px;
+            transition: color 0.3s ease, border-color 0.3s ease,
+                        background-color 0.3s ease, outline 0.3s ease;
+        }
+
+        footer a:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        footer a:focus {
+            outline: 2px solid var(--accent-color);
+            outline-offset: 2px;
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        footer a:active {
+            background-color: rgba(255, 255, 255, 0.35);
+            border-bottom-style: solid;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Амбурцева Алёна</h1>
+        <p>Предприниматель • Стартапер • Основатель проектов</p>
+
+        <nav class="nav" aria-label="Основная навигация">
+            <ul class="nav-list">
+                <li><a href="#skills" class="nav-link">Навыки</a></li>
+                <li><a href="#ideas" class="nav-link">Идеи</a></li>
+                <li><a href="#metrics" class="nav-link">Метрики</a></li>
+                <li><a href="#contact" class="nav-link">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main class="main-content">
+
+            <img class="portrait"
+                 src="images/photo.jpg"
+                 alt="Портрет Амбурцевой Алёны, предпринимателя и стартапера"
+                 width="180"
+                 height="180">
+
+            <section id="skills" class="section">
+                <h2>Навыки</h2>
+                <ul class="skills">
+                    <li><strong>Маркетинг</strong> — продвижение продуктов, анализ рынка, работа с воронками продаж</li>
+                    <li><strong>Управление проектами</strong> — планирование задач, распределение обязанностей, контроль сроков и результата</li>
+                    <li><strong>Финансовое планирование</strong> — юнит-экономика, финмодели, привлечение инвестиций</li>
+                    <li><strong>Работа с командой</strong> — подбор людей, мотивация, организация совместной работы</li>
+                </ul>
+            </section>
+
+            <section id="ideas" class="section">
+                <h2>Идеи стартапов</h2>
+
+                <div class="cards">
+                    <article class="card">
+                        <h3 class="card-title">Инвест-платформа</h3>
+                        <p class="card-problem"><strong>Проблема:</strong> стартапам сложно найти первых инвесторов.</p>
+                        <p class="card-solution"><strong>Решение:</strong> онлайн-платформа с прозрачным скорингом проектов.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Здоровое питание</h3>
+                        <p class="card-problem"><strong>Проблема:</strong> нет времени готовить полезную еду.</p>
+                        <p class="card-solution"><strong>Решение:</strong> доставка готовых рационов по подписке.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Финансовый трекер</h3>
+                        <p class="card-problem"><strong>Проблема:</strong> сложно контролировать личные расходы.</p>
+                        <p class="card-solution"><strong>Решение:</strong> мобильное приложение с геймификацией бюджета.</p>
+                    </article>
+
+                    <article class="card">
+                        <h3 class="card-title">Курс по стартапам</h3>
+                        <p class="card-problem"><strong>Проблема:</strong> новички не знают, с чего начать бизнес.</p>
+                        <p class="card-solution"><strong>Решение:</strong> практический онлайн-курс с наставниками.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="metrics" class="section">
+                <h2>Ключевые метрики</h2>
+
+                <div class="metrics-grid">
+                    <article class="metric">
+                        <h3>MAU</h3>
+                        <p class="metric-desc">Monthly Active Users</p>
+                        <meter class="metric-meter" min="0" max="100000" value="72000">72 000</meter>
+                        <p class="metric-value"><data value="72000">72 000</data> активных пользователей</p>
+                    </article>
+
+                    <article class="metric">
+                        <h3>LTV</h3>
+                        <p class="metric-desc">Lifetime Value</p>
+                        <meter class="metric-meter" min="0" max="10000" value="4200">4 200 ₽</meter>
+                        <p class="metric-value"><data value="4200">4 200 ₽</data> с пользователя</p>
+                    </article>
+
+                    <article class="metric">
+                        <h3>CAC</h3>
+                        <p class="metric-desc">Customer Acquisition Cost</p>
+                        <meter class="metric-meter" min="0" max="10000" value="1500">1 500 ₽</meter>
+                        <p class="metric-value"><data value="1500">1 500 ₽</data> на привлечение</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>Связаться со мной</h2>
+                <form class="feedback-form" action="#" method="post">
+                    <label for="name">Имя</label>
+                    <input type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" placeholder="Расскажите о вашей идее или проекте..." required></textarea>
+
+                    <button type="submit" style="cursor: pointer;">Отправить</button>
+                </form>
+            </section>
+
+        </main>
+
+        <aside class="aside">
+            <h2>Любимые инструменты</h2>
+            <ul>
+                <li>🧠 Notion — для планирования и заметок</li>
+                <li>📊 Trello — для управления задачами</li>
+                <li>📈 Google Analytics — для анализа трафика</li>
+                <li>💬 Telegram — для быстрой связи с командой</li>
+            </ul>
+
+            <h2 class="aside-title">Ключевая ценность</h2>
+            <p>«Создавать продукты, которые решают реальные проблемы людей и делают жизнь проще».</p>
+
+            <span class="badge">Top skill</span>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Амбурцева Алёна. Все права защищены.</p>
+        <p><a href="#skills">Навыки</a> | <a href="#ideas">Идеи</a> | <a href="#metrics">Метрики</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
